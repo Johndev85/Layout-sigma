@@ -1,0 +1,18 @@
+/* -------VARIABLES-----------*/
+$color-shadow: #b4b4b4;
+$color-button: #e03b65;
+
+/* -------FONT-----------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* -------GLOBALS-----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
