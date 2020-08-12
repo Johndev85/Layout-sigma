@@ -52,10 +52,14 @@
                         />
                     </div>
                     <div class="col-12 col-md-12 col-lg-5">
-                        <form class="main__bottom__row__form">
+                        <form class="main__bottom__row__form" id="form">
                             <div class="form-group">
                                 <label for="departamento">Departamento*</label>
-                                <select class="form-control" id="departamento">
+                                <select
+                                    class="form-control"
+                                    id="departamento"
+                                    name="departamento"
+                                >
                                     <option value="0">Amazonas</option>
                                     <option value="">Atlantico</option>
                                     <option value="">Caqueta</option>
@@ -82,9 +86,8 @@
                                 <select
                                     class="form-control"
                                     id="ciudad"
-                                    placeholder="Medellín"
+                                    name="ciudad"
                                 >
-                                    <option>Medellín</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -92,8 +95,9 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="exampleFormControlInput1"
+                                    id="nombre"
                                     placeholder="Pepito de Jesús"
+                                    name="nombre"
                                 />
                             </div>
                             <div class="form-group">
@@ -103,6 +107,7 @@
                                     class="form-control"
                                     id="correo"
                                     placeholder="Pepitodejesus@gmail.com"
+                                    name="correo"
                                 />
                             </div>
                             <div
@@ -111,6 +116,7 @@
                                 <button
                                     type="submit"
                                     class="btn btn-primary main__bottom__row__form--button"
+                                    id="buttonForm"
                                 >
                                     ENVIAR
                                 </button>
@@ -139,6 +145,41 @@
             crossorigin="anonymous"
         ></script>
         <script src="./dist/bundle.js"></script>
+
+        <!-- Modal -->
+
+        <div class="modal" tabindex="-1" id="Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
 v
