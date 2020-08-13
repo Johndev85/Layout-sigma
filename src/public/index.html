@@ -52,7 +52,11 @@
                         />
                     </div>
                     <div class="col-12 col-md-12 col-lg-5">
-                        <form class="main__bottom__row__form" id="form">
+                        <form
+                            class="main__bottom__row__form"
+                            id="form"
+                            onsubmit="return validacion()"
+                        >
                             <div class="form-group">
                                 <label for="departamento">Departamento*</label>
                                 <select
@@ -99,6 +103,12 @@
                                     placeholder="Pepito de Jesús"
                                     name="nombre"
                                 />
+                                <p
+                                    id="text_vali"
+                                    class="form-group--text_validaty"
+                                >
+                                    El nombre no tiene un formato valido
+                                </p>
                             </div>
                             <div class="form-group">
                                 <label for="correo">Correo*</label>
@@ -109,6 +119,12 @@
                                     placeholder="Pepitodejesus@gmail.com"
                                     name="correo"
                                 />
+                                <p
+                                    id="text_vali"
+                                    class="form-group--text_validaty"
+                                >
+                                    El correo no tiene un formato valido
+                                </p>
                             </div>
                             <div
                                 class="container d-flex justify-content-center"
@@ -144,7 +160,7 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"
         ></script>
-        <script src="./dist/bundle.js"></script>
+        <script src="/dist/bundle.js"></script>
 
         <!-- Modal -->
 

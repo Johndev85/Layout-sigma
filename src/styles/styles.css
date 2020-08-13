@@ -34,3 +34,28 @@ body {
   max-width: 85%;
   height: 85%;
 }
+
+form label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form-group--text_validaty {
+  color: red;
+  text-align: right;
+  font-style: italic;
+  font-size: 0.7em;
+  display: none;
+}
+
+form input {
+  margin: 10px 0px;
+  height: 40px;
+  border-radius: 5px;
+  /* --------------------------------------------validation -- */
+  background-image: url(../images/icon-error.svg);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 23em;
+  /* --------------------------------------------validation -- */
+}

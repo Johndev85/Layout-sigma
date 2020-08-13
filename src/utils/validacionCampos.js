@@ -6,7 +6,9 @@ function validacion() {
         valor.length > 50 ||
         /^\s+$/.test(valor)
     ) {
-        document.getElementById("nombre").style.border = "2px solid red"
+        document.getElementById("text_vali").style.display = "inline"
+        valor.style.backgroundImage = "url(../styles/assets/icon-error.svg)"
+
         console.log("validation failed")
         return false
     } else var valor2 = document.getElementById("correo").value
@@ -17,12 +19,15 @@ function validacion() {
         valor2.length > 30 ||
         !re.exec(valor2)
     ) {
-        document.getElementById("correo").style.border = "2px solid red"
+        document.getElementById("text_vali").style.display = "inline"
+        valor2.style.backgroundImage = "url(../styles/assets/icon-error.svg)"
+        console.log("validation failed")
     } else
         document
             .getElementById("buttonForm")
-            .classList.add('data-toggle="modal" data-target="Modal"')
+            .setAttribute("data-toggle", "modal")
+    document.getElementById("buttonForm").setAttribute("data-target", "#modal")
     return true
 }
 
-export default validacion()
+export default validacion
