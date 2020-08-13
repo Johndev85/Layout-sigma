@@ -1,4 +1,6 @@
-# Diseño layout Sigma
+# Diseño layout responsivo Sigma
+
+![](https://repository-images.githubusercontent.com/286589725/f698b780-dd05-11ea-81de-3a6f58cf2f42)
 
 ## 🚀 Instalación
 
