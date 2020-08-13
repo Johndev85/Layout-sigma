@@ -27,7 +27,8 @@ function validacion() {
             .getElementById("buttonForm")
             .setAttribute("data-toggle", "modal")
     document.getElementById("buttonForm").setAttribute("data-target", "#modal")
+    document.getElementById("buttonForm").setAttribute("data-toggle", "modal")
     return true
 }
 
-export default validacion
+export default validacion()

@@ -10,10 +10,8 @@ function datosApi() {
         return opcionSeleccionada.text
     }
 
-    const datosApi = () => {
-        // const url = "http://localhost:3000/Cesar"
-        // const urlApi = url + indice
-        fetch("http://localhost:3000/Cesar")
+    const accesoApi = (dato) => {
+        fetch("http://localhost:3000/" + String(dato))
             .then((res) => res.json())
             .then((data) => {
                 console.log("api ok")
@@ -33,8 +31,8 @@ function datosApi() {
     }
 
     $departamento.addEventListener("change", departamentos)
-    $departamento.addEventListener("change", datosApi)
-    $departamento.addEventListener("change", mostrarCiudades(datosApi))
+    $departamento.addEventListener("change", accesoApi(departamentos))
+    $departamento.addEventListener("change", mostrarCiudades(accesoApi))
 }
 
 export default datosApi()
