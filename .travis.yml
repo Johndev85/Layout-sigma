@@ -8,3 +8,5 @@ deploy:
     api_key:
         secure: 9f736cb8-6497-405d-aace-f005e64a7c2b
     app: Layout-sigma
+on:
+    repo: Johndev85/Layout-sigma
