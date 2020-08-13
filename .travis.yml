@@ -3,3 +3,8 @@ node_js: "12"
 cache: npm
 script:
     - "npm run dev"
+deploy:
+    provider: heroku
+    api_key:
+        secure: 9f736cb8-6497-405d-aace-f005e64a7c2b
+    app: Layout-sigma
