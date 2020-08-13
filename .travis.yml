@@ -6,7 +6,7 @@ script:
 deploy:
     provider: heroku
     api_key:
-        secure: 9f736cb8-6497-405d-aace-f005e64a7c2b
+        secure: 3ed52c1a-1220-426c-8cb2-f08fd7c1e6f3
     app: Layout-sigma
 on:
     repo: Johndev85/Layout-sigma
